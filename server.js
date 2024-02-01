@@ -98,4 +98,7 @@ io.on('connection', socket => {
         return activeUsers2;
     }
 
-});           
+});       
+
+
+module.exports = app;
