@@ -16,9 +16,10 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        // origin: "*"
-        origin: "https://onchat-react.netlify.app/",
-        methods: ["POST", "GET", "DELETE", "PUT"]
+        // origin: "https://onchat-react.netlify.app/",
+        // methods: ["POST", "GET", "DELETE", "PUT"]
+        allowedHeaders: ['*'],
+        origin: '*',
     }
 });
 
